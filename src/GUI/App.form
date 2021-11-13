@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.App">
+  <grid id="27dc6" binding="landing" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1604" height="1093"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1504" height="836"/>
+      <opaque value="false"/>
+      <preferredSize width="1650" height="950"/>
+      <requestFocusEnabled value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="1c452" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="1600" height="925"/>
+            <maximum-size width="1600" height="925"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="ad7bd">
+            <constraints>
+              <tabbedpane title="Settings"/>
+            </constraints>
+            <properties>
+              <maximumSize width="1500" height="875"/>
+              <minimumSize width="-1" height="-1"/>
+              <opaque value="true"/>
+              <preferredSize width="1500" height="875"/>
+              <requestFocusEnabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="2102c" layout-manager="GridLayoutManager" row-count="27" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints/>
+                <properties>
+                  <maximumSize width="1500" height="875"/>
+                  <minimumSize width="-1" height="-1"/>
+                  <opaque value="true"/>
+                  <preferredSize width="1500" height="875"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="7fc23" class="javax.swing.JLabel" binding="instructions">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="&lt;html&gt;&lt;p style=&quot;text-align:center;&quot;&gt;Choose how many files will be QA'd, and label them based on their source.&lt;br\&gt;For example, Facebook if your file is Facebook data, or, DCM if your data is from a DCM&lt;/html&gt;"/>
+                    </properties>
+                  </component>
+                  <component id="53c15" class="javax.swing.JLabel" binding="file1OriginLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 1:"/>
+                    </properties>
+                  </component>
+                  <component id="81846" class="javax.swing.JSpinner" binding="spinner1" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="75" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <doubleBuffered value="false"/>
+                    </properties>
+                  </component>
+                  <component id="1464b" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Number of Files to QA (up to 12):"/>
+                    </properties>
+                  </component>
+                  <component id="5c836" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="1" column="3" row-span="25" col-span="1" vsize-policy="6" hsize-policy="6" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <orientation value="1"/>
+                    </properties>
+                  </component>
+                  <component id="68154" class="javax.swing.JLabel" binding="file2OriginLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 2:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="fa410" class="javax.swing.JTextField" binding="file2OriginInputted">
+                    <constraints>
+                      <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="d003f" class="javax.swing.JLabel" binding="file3OriginLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 3:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="436e6" class="javax.swing.JLabel" binding="file4OriginLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 4:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="b4d09" class="javax.swing.JLabel" binding="file5OriginLabel">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 5:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="86ec4" class="javax.swing.JLabel" binding="file6OriginLabel">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 6:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="96e96" class="javax.swing.JLabel" binding="file7OriginLabel">
+                    <constraints>
+                      <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 7:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="c3bd6" class="javax.swing.JLabel" binding="file8OriginLabel">
+                    <constraints>
+                      <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 8:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="6fc86" class="javax.swing.JLabel" binding="file9OriginLabel">
+                    <constraints>
+                      <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 9:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="cd394" class="javax.swing.JLabel" binding="file10OriginLabel">
+                    <constraints>
+                      <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 10:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="2dbba" class="javax.swing.JLabel" binding="file11OriginLabel">
+                    <constraints>
+                      <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 11:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="e3d3e" class="javax.swing.JLabel" binding="file12OriginLabel">
+                    <constraints>
+                      <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Data Origin for File 12:"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="2de6a" class="javax.swing.JTextField" binding="file1OriginInputted">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="3b68b" class="javax.swing.JTextField" binding="file3OriginInputted">
+                    <constraints>
+                      <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="558c9" class="javax.swing.JTextField" binding="file4OriginInputted">
+                    <constraints>
+                      <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="8b504" class="javax.swing.JTextField" binding="file5OriginInputted">
+                    <constraints>
+                      <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="85f11" class="javax.swing.JTextField" binding="file6OriginInputted">
+                    <constraints>
+                      <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="4862e" class="javax.swing.JTextField" binding="file7OriginInputted">
+                    <constraints>
+                      <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="dd1b0" class="javax.swing.JTextField" binding="file8OriginInputted">
+                    <constraints>
+                      <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="3d5f7" class="javax.swing.JTextField" binding="file9OriginInputted">
+                    <constraints>
+                      <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="85dde" class="javax.swing.JTextField" binding="file10OriginInputted">
+                    <constraints>
+                      <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="7ab0e" class="javax.swing.JTextField" binding="file11OriginInputted">
+                    <constraints>
+                      <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="bd8c" class="javax.swing.JTextField" binding="file12OriginInputted">
+                    <constraints>
+                      <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="129" height="30"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <toolTipText value="ex: Facebook, DCM, etc."/>
+                    </properties>
+                  </component>
+                  <component id="7b9fa" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="File Settings"/>
+                    </properties>
+                  </component>
+                  <component id="1004c" class="javax.swing.JButton" binding="addFileButton1">
+                    <constraints>
+                      <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 1"/>
+                    </properties>
+                  </component>
+                  <component id="eafb9" class="javax.swing.JLabel" binding="filePathLabel1">
+                    <constraints>
+                      <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="3e7c2" class="javax.swing.JButton" binding="addFileButton2">
+                    <constraints>
+                      <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 2"/>
+                    </properties>
+                  </component>
+                  <component id="ac185" class="javax.swing.JButton" binding="addFileButton3">
+                    <constraints>
+                      <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 3"/>
+                    </properties>
+                  </component>
+                  <component id="e83ad" class="javax.swing.JButton" binding="addFileButton4">
+                    <constraints>
+                      <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 4"/>
+                    </properties>
+                  </component>
+                  <component id="5d704" class="javax.swing.JButton" binding="addFileButton5">
+                    <constraints>
+                      <grid row="7" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 5"/>
+                    </properties>
+                  </component>
+                  <component id="dfaa6" class="javax.swing.JButton" binding="addFileButton6">
+                    <constraints>
+                      <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 6"/>
+                    </properties>
+                  </component>
+                  <component id="f0a10" class="javax.swing.JButton" binding="addFileButton7">
+                    <constraints>
+                      <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 7"/>
+                    </properties>
+                  </component>
+                  <component id="cc288" class="javax.swing.JButton" binding="addFileButton8">
+                    <constraints>
+                      <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 8"/>
+                    </properties>
+                  </component>
+                  <component id="f5ef5" class="javax.swing.JButton" binding="addFileButton9">
+                    <constraints>
+                      <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 9"/>
+                    </properties>
+                  </component>
+                  <component id="b9882" class="javax.swing.JButton" binding="addFileButton10">
+                    <constraints>
+                      <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 10"/>
+                    </properties>
+                  </component>
+                  <component id="e12be" class="javax.swing.JButton" binding="addFileButton11">
+                    <constraints>
+                      <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 11"/>
+                    </properties>
+                  </component>
+                  <component id="c8695" class="javax.swing.JButton" binding="addFileButton12">
+                    <constraints>
+                      <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Add File 12"/>
+                    </properties>
+                  </component>
+                  <component id="9bbd0" class="javax.swing.JLabel" binding="filePathLabel2">
+                    <constraints>
+                      <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="18552" class="javax.swing.JLabel" binding="filePathLabel3">
+                    <constraints>
+                      <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="75d4d" class="javax.swing.JLabel" binding="filePathLabel4">
+                    <constraints>
+                      <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="bb05d" class="javax.swing.JLabel" binding="filePathLabel5">
+                    <constraints>
+                      <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="358db" class="javax.swing.JLabel" binding="filePathLabel6">
+                    <constraints>
+                      <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="49b86" class="javax.swing.JLabel" binding="filePathLabel7">
+                    <constraints>
+                      <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="31939" class="javax.swing.JLabel" binding="filePathLabel8">
+                    <constraints>
+                      <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="13353" class="javax.swing.JLabel" binding="filePathLabel9">
+                    <constraints>
+                      <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="3f942" class="javax.swing.JLabel" binding="filePathLabel10">
+                    <constraints>
+                      <grid row="12" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="879cd" class="javax.swing.JLabel" binding="filePathLabel11">
+                    <constraints>
+                      <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <component id="1d502" class="javax.swing.JLabel" binding="filePathLabel12">
+                    <constraints>
+                      <grid row="14" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value=" "/>
+                    </properties>
+                  </component>
+                  <hspacer id="7f125">
+                    <constraints>
+                      <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="11"/>
+                      </grid>
+                    </constraints>
+                  </hspacer>
+                  <component id="b37b1" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="16" column="4" row-span="2" col-span="2" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="43805" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="18" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Query Settings"/>
+                    </properties>
+                  </component>
+                  <vspacer id="879ef">
+                    <constraints>
+                      <grid row="15" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <hspacer id="3122c">
+                    <constraints>
+                      <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="6610c">
+                    <constraints>
+                      <grid row="25" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <preferred-size width="-1" height="10"/>
+                        <maximum-size width="-1" height="10"/>
+                      </grid>
+                    </constraints>
+                  </vspacer>
+                  <vspacer id="ef51e">
+                    <constraints>
+                      <grid row="19" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="15"/>
+                        <maximum-size width="-1" height="15"/>
+                      </grid>
+                    </constraints>
+                  </vspacer>
+                  <component id="8b128" class="javax.swing.JCheckBox" binding="enableSmartQueryCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="20" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Enable Smart Query"/>
+                      <toolTipText value="Cheking this box will have the program ask you a series of questions about your data, and create a QA query for you based on your inputs"/>
+                    </properties>
+                  </component>
+                  <component id="c6dcc" class="javax.swing.JCheckBox" binding="enableCustomQueriesCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="21" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Enable Custom Queries"/>
+                      <toolTipText value="Allows the program to accept custom queries written in SQL"/>
+                    </properties>
+                  </component>
+                  <component id="bd8f7" class="javax.swing.JLabel" binding="queryBuilderLabel">
+                    <constraints>
+                      <grid row="21" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="607" height="16"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Query Builder: Save custom queries here: (Use data origin entries you made in File Settings as your table names)"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <vspacer id="df0c6">
+                    <constraints>
+                      <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <preferred-size width="11" height="168"/>
+                      </grid>
+                    </constraints>
+                  </vspacer>
+                  <component id="6f62d" class="javax.swing.JButton" binding="saveSettingsButton">
+                    <constraints>
+                      <grid row="25" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Save Settings"/>
+                    </properties>
+                  </component>
+                  <component id="4a298" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="25" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="&lt;html&gt;Note: Linked Files will need to be &lt;br/&gt; reselected next time you run the program&lt;/html&gt; "/>
+                      <verticalTextPosition value="0"/>
+                    </properties>
+                  </component>
+                  <component id="3c2dd" class="javax.swing.JTextArea" binding="queryBuilderTextField">
+                    <constraints>
+                      <grid row="22" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="50"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="26c02" class="javax.swing.JTextField" binding="queryTitleTextField">
+                    <constraints>
+                      <grid row="23" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="bd771" class="javax.swing.JButton" binding="saveQueryButton">
+                    <constraints>
+                      <grid row="24" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="105" height="-1"/>
+                        <preferred-size width="105" height="-1"/>
+                        <maximum-size width="105" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Save Query"/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                  <component id="cd3c9" class="javax.swing.JLabel" binding="queryTitleFieldLabel">
+                    <constraints>
+                      <grid row="23" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Title your Query: "/>
+                      <visible value="false"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <grid id="44247" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Main">
+                <tooltip value="program settings"/>
+              </tabbedpane>
+            </constraints>
+            <properties>
+              <inheritsPopupMenu value="false"/>
+              <maximumSize width="1500" height="875"/>
+              <minimumSize width="-1" height="-1"/>
+              <preferredSize width="1500" height="875"/>
+              <requestFocusEnabled value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="14530" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="1500" height="875"/>
+                    <maximum-size width="1500" height="875"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <hspacer id="1a7a4">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="8d0e2">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
